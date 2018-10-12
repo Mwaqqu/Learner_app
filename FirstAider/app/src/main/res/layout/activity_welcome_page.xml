@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".welcome_page">
+
+    <RelativeLayout
+        android:id="@+id/headerMainPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/mainThemeRed"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="31dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/hamburger" />
+
+        <Button
+            android:id="@+id/points"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/points"
+            android:text="0"
+            android:textColor="@color/mainThemeRed"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/points"
+            android:layout_centerInParent="true"
+            android:layout_marginVertical="16dp"
+            android:paddingVertical="20dp">
+
+            <TextView
+                android:id="@+id/welcomeText"
+                android:layout_width="283dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Welcome to your journey of being a hero!"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="96dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/welcomeText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/continue_button" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/callYourNearby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="260dp"
+        android:background="@drawable/call_your_nearby" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/whole_container_for_three"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/up_next" />
+    <RelativeLayout
+        android:id="@+id/contact_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerMainPage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="16dp">
+
+        <Button
+            android:id="@+id/hospital_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/hospital" />
+
+        <Button
+            android:id="@+id/ambulance_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ambulance" />
+
+        <Button
+            android:id="@+id/clinic_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/clinic" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/whole_container_for_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="14dp"
+        android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/below_button_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/rectangle"
+                android:text="Skill 1:\nAllergies"
+                android:textAllCaps="false"
+                android:textColor="@color/textOnWhiteBack" />
+
+            <Button
+                android:id="@+id/below_button_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/rectangle"
+                android:text="Skill 2:\nAsthma"
+                android:textAllCaps="false"
+                android:textColor="@color/textOnWhiteBack" />
+
+            <Button
+                android:id="@+id/below_button_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/rectangle"
+                android:text="Skill 3:\nBleeding"
+                android:textAllCaps="false"
+                android:textColor="@color/textOnWhiteBack" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

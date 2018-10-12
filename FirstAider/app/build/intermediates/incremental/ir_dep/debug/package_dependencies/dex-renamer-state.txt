@@ -1,0 +1,4 @@
+#Fri Oct 12 02:57:00 PKT 2018
+base.0=C\:\\Users\\Rafia Azhar Syed\\AndroidStudioProjects\\FirstAider\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
+path.0=classes.dex
+renamed.0=classes.dex
